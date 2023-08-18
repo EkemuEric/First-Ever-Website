@@ -2,21 +2,91 @@
 <html>
     <head>
         <title>First-Ever-Website</title>
-        <link rel="stylesheet" href=>
+
+        <style>
+
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            div {
+                background-color: rgb(230, 230, 238);
+                position: fixed;
+            }
+
+            div ul {
+                float: left;
+                display: block;
+            }
+
+            div ul li {
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                position: relative;
+                margin: 10px;
+                padding: 14px 18px;
+                float: left;
+                list-style-type: none;
+            }
+
+            div ul li:hover {
+                background-color: rgb(204, 103, 120);
+                border-radius: 5px;
+                border-bottom: 3px solid rgba(500, 34, 460, 1);
+                border-left: 3px solid rgba(500, 34, 460, 1);
+                position: relative;
+            }
+
+            div ul li a {
+                text-decoration: none;
+            }
+
+            div ul li a:hover {
+                color: white;
+            }
+
+            div ul li ul {
+                display: none;
+                
+
+            }
+
+            .srch {
+                padding: 12px 16px;
+                margin-top: 30px;
+                border-radius: 5px; 
+                border-color: rgb(204, 103, 120);
+
+            }
+        </style>
     </head>
 
     <body>
 
-        <nav>
-            <div>
-                <ul>
-                    <li>HOME</li>
-                    <li>SERVICES</li>
-                    <li>ABUOT US</li>
-                    <li>HELP</li>
-                </ul>
-            </div>
-        </nav>
+         <div>
+          <ul>
+           <li><a href=>HOME</a></li>
+           <li><a href=>SERVICES
+            <ul>
+                <li><a href=>Delivery</a></li>  
+                <li><a href=>Labour</a></li>   
+                <li><a href=>Security</a></li>   
+               </ul>
+           </a></li>
+           <li><a href=>ABOUT US
+            <ul>
+             <li><a href=>Location</a></li>  
+             <li><a href=>Contacts</a></li>   
+             <li><a href=>Operations</a></li>   
+            </ul>
+           </a></li>
+           <li><a href=>HELP</a></li>
+          </ul>
 
+          <input class="srch" type="search" placeholder="Search">
+          <input class="srch" type="submit" value="GO">
+        </div>
+      
     </body>
 </html>
